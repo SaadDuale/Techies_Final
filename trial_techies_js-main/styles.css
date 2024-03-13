@@ -1,0 +1,149 @@
+/* Organize the code based on this structure: 
+1. Classes targeting outside the box, and the border
+2. Classes targeting inside the box
+*/
+
+body {
+  margin-top: 1rem;
+  background-color: black;
+}
+
+.site {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-radius: 5px;
+  /*  */
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+}
+
+/* -------------------------------------------  Menu styles */
+
+.headingMenu {
+  margin-right: 1rem;
+  /*  */
+  width: 20%;
+  padding: 1rem;
+  height: 40rem;
+  overflow: auto;
+}
+
+.pagesHeading {
+  border-radius: 5px;
+  /*  */
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 1rem;
+}
+
+.pagesMenu {
+  margin-bottom: 1rem;
+  /*  */
+  display: flex;
+  justify-content: space-between;
+}
+
+.pagesMenu .menuItem {
+  border: 1px solid white;
+  border-radius: 5px;
+  /*  */
+  background-color: black;
+  color: white;
+  width: 5rem;
+  padding: 0.5rem;
+  text-decoration: none;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+}
+
+nav .menuItem {
+  margin: 0.5rem;
+  border-bottom: 1px solid black;
+  /*  */
+  text-decoration: none;
+  color: black;
+  padding: 0.5rem;
+}
+
+:hover.menuItem {
+  background-color: black;
+  color: white;
+}
+
+/* --------------------------------------------- Profile styles */
+
+.allProfiles {
+  border: 1px solid black;
+  border-radius: 5px;
+  /*  */
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  /*  */
+  height: 40rem;
+  width: 80%;
+  overflow: auto;
+}
+
+.profile {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid black;
+  /*  */
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+
+.textContent {
+  margin-right: 1rem;
+  /*  */
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  border-radius: 5px;
+  /*  */
+  background-color: black;
+  padding: 0.5rem;
+  color: white;
+  text-align: center;
+}
+
+.description {
+  line-height: 2rem;
+}
+
+.picture {
+  border: 1px solid black;
+  border-radius: 5px;
+  /*  */
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  background-color: black;
+}
+
+.contactContribution {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ccItem {
+  border-radius: 5px;
+  /*  */
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  padding: 0.5rem;
+}
